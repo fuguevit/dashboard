@@ -3,6 +3,7 @@
 namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Foundation\Inspiring;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
@@ -35,6 +36,8 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        require base_path('routes/console.php');
+        Artisan::command('inspire', function () {
+            $this->comment(Inspiring::quote());
+        })->describe('Display an inspiring quote');
     }
 }
