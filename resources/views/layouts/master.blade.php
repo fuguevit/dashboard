@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900' rel='stylesheet'
+          type='text/css'>
+    <link href="{{ elixir("css/app.css") }}" rel="stylesheet"/>
+    <meta name="google" value="notranslate">
+    <meta name="csrf-token" value="{{ csrf_token() }}">
+</head>
+<body>
+    @yield('content')
+
+    <script src="{{ elixir("js/app.js") }}"></script>
+
+</body>
+</html>
