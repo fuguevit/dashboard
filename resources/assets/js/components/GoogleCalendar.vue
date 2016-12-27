@@ -15,7 +15,7 @@
 <script>
     import { relativeDate } from '../helpers';
     import echo from '../mixins/echo';
-    import Grid from './Grid';
+    import Grid from './Grid.vue';
     import saveState from 'vue-save-state';
 
     export default {
