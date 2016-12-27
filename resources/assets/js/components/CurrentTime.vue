@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import Grid from './Grid';
+    import Grid from './Grid.vue';
     import moment from 'moment';
 
     export default {
