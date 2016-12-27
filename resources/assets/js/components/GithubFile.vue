@@ -8,7 +8,7 @@
 </template>
 <script>
     import echo from '../mixins/echo';
-    import Grid from './Grid.vue';
+    import Grid from './Grid';
     import saveState from 'vue-save-state';
 
     export default {
