@@ -325,3 +325,18 @@ li {
 .github-file__content {
   font-size: 0.9em;
 }
+
+.google-calendar__events {
+  color: #73c7de;
+  font-size: 0.9em;
+}
+
+.google-calendar__event {
+  padding-bottom: 1.5vh;
+}
+
+.google-calendar__event__title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
