@@ -57743,12 +57743,12 @@ function getSavedState(key) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_laravel_echo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_laravel_echo__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime_vue__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_CurrentTime_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_GithubFile_vue__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_GithubFile_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_GithubFile_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar_vue__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_CurrentTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_GithubFile__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_GithubFile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_GithubFile__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar__);
 
 
 
@@ -57759,18 +57759,20 @@ function getSavedState(key) {
 
 
 new __WEBPACK_IMPORTED_MODULE_2_vue___default.a({
-    e1: '#dashboard',
+
+    el: '#dashboard',
 
     components: {
-        CurrentTime: __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime_vue___default.a,
-        GithubFile: __WEBPACK_IMPORTED_MODULE_4__components_GithubFile_vue___default.a,
-        GoogleCalendar: __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar_vue___default.a,
+        CurrentTime: __WEBPACK_IMPORTED_MODULE_3__components_CurrentTime___default.a,
+        GithubFile: __WEBPACK_IMPORTED_MODULE_4__components_GithubFile___default.a,
+        GoogleCalendar: __WEBPACK_IMPORTED_MODULE_5__components_GoogleCalendar___default.a,
     },
-    
+
     created: function created() {
         this.echo = new __WEBPACK_IMPORTED_MODULE_1_laravel_echo___default.a({
-            boradcaster: 'pusher',
-            key: window.dashboard.pusherKey,
+            broadcaster: 'pusher',
+            key: "sdfsfdsfdsfsdffdsdsfdsf"
+            //key: window.dashboard.pusherKey,
         });
     },
 });
