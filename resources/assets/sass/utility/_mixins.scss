@@ -1,31 +1,31 @@
 @mixin antialiasing($value: subpixel) {
-    @if $value == subpixel {
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    @if $value == pixel {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+  @if $value == subpixel {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  @if $value == pixel {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @mixin background-icon($url) {
-    height: 100%;
+  height: 100%;
 
-    background-image: url($url);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: #{(100/setting($grid, cols) - 15)}vw;
-    opacity: .2;
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: #{(100/setting($grid, cols) - 15)}vw;
+  opacity: .2;
 }
 
 @mixin background-pattern($url) {
-    height: 100%;
+  height: 100%;
 
-    background-image: url($url);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: #{(100/setting($grid, cols) - 15)}vw;
-    opacity: .2;
+  background-image: url($url);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: #{(100/setting($grid, cols) - 15)}vw;
+  opacity: .2;
 }
 
 @mixin icon($url) {
@@ -98,7 +98,7 @@
   top: 50%;
   left: 50%;
 
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(50%);
 }
 
 @mixin mod($name) {
