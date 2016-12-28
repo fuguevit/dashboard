@@ -57771,7 +57771,7 @@ new __WEBPACK_IMPORTED_MODULE_2_vue___default.a({
     created: function created() {
         this.echo = new __WEBPACK_IMPORTED_MODULE_1_laravel_echo___default.a({
             broadcaster: 'pusher',
-            key: "sdfsfdsfdsfsdffdsdsfdsf"
+            key: 'test'
             //key: window.dashboard.pusherKey,
         });
     },
