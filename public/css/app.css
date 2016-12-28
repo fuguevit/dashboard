@@ -340,3 +340,29 @@ li {
   font-style: normal;
   font-weight: 600;
 }
+
+.internet-connection--down {
+  background-color: #e83134;
+}
+
+.internet-connection--down .internet-connection__icon {
+  height: 100%;
+  background-image: url("/svg/internet--down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10vw;
+  opacity: .2;
+}
+
+.internet-connection--up {
+  background-color: #287368;
+}
+
+.internet-connection--up .internet-connection__icon {
+  height: 100%;
+  background-image: url("/svg/internet--up.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10vw;
+  opacity: .2;
+}
