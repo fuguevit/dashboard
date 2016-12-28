@@ -219,7 +219,7 @@ li {
   bottom: 0%;
 }
 
-.grid__title {
+.grid__tile {
   background-color: #23272f;
   position: absolute;
   top: 0.5vw;
@@ -231,12 +231,12 @@ li {
   border-radius: .25vw;
 }
 
-.grid__title:after {
+.grid__tile:after {
   background: -webkit-linear-gradient(top, rgba(35, 39, 47, 0) 0, #23272f 100%);
   background: linear-gradient(to bottom, rgba(35, 39, 47, 0) 0, #23272f 100%);
 }
 
-.grid__title--overflow:after {
+.grid__tile--overflow:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -246,47 +246,47 @@ li {
   z-index: 100;
 }
 
-.grid__title--padded > :first-child {
+.grid__tile--padded > :first-child {
   padding: 1vw;
 }
 
-.grid__title--transparent {
+.grid__tile--transparent {
   background-color: #1a1e25;
 }
 
-.grid__title--transparent:after {
+.grid__tile--transparent:after {
   background: -webkit-linear-gradient(top, rgba(26, 30, 37, 0) 0, #1a1e25 100%);
   background: linear-gradient(to bottom, rgba(26, 30, 37, 0) 0, #1a1e25 100%);
 }
 
-.grid__title--blue {
+.grid__tile--blue {
   background-color: #202f53;
 }
 
-.grid__title--blue:after {
+.grid__tile--blue:after {
   background: -webkit-linear-gradient(top, rgba(32, 47, 83, 0) 0, #202f53 100%);
   background: linear-gradient(to bottom, rgba(32, 47, 83, 0) 0, #202f53 100%);
 }
 
-.grid__title--green {
+.grid__tile--green {
   background-color: #287368;
 }
 
-.grid__title--green:after {
+.grid__tile--green:after {
   background: -webkit-linear-gradient(top, rgba(40, 115, 104, 0) 0, #287368 100%);
   background: linear-gradient(to bottom, rgba(40, 115, 104, 0) 0, #287368 100%);
 }
 
-.grid__title--red {
+.grid__tile--red {
   background-color: #e83134;
 }
 
-.grid__title--red:after {
+.grid__tile--red:after {
   background: -webkit-linear-gradient(top, rgba(232, 49, 52, 0) 0, #e83134 100%);
   background: linear-gradient(to bottom, rgba(232, 49, 52, 0) 0, #e83134 100%);
 }
 
-.grid__title > :first-child {
+.grid__tile > :first-child {
   height: 100%;
 }
 
@@ -294,8 +294,8 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(50%);
-  transform: translateX(-50%) translateY(50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   text-align: center;
 }
 
@@ -303,6 +303,7 @@ li {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 300;
+  font-size: 2em;
   letter-spacing: .05em;
   line-height: 1;
 }

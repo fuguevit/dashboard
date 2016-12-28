@@ -1,6 +1,6 @@
 $grid-cols: setting($grid, cols);
 $grid-rows: setting($grid, rows);
-$grid-col-names: (a, b, c, d, e, f, g, h, i, j, k, l);  // and more if needed
+$grid-col-names: (a, b, c, d, e, f, g, h, i, j, k, l); // add more if needed
 $cell-width: percentage(1/$grid-cols);
 $cell-height: percentage(1/$grid-rows);
 
@@ -25,7 +25,7 @@ $cell-height: percentage(1/$grid-rows);
   }
 }
 
-.grid__title {
+.grid__tile {
   @include tile-color(color($gray, darker));
   @include mod(overflow) {
     &:after {
