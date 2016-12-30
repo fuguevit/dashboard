@@ -10,6 +10,6 @@ return [
     /*
      *  The id of the Google Calendar that will be used by default.
      */
-    'calendar_id' => '7042e51c97f7bcbf2ff0c322890bfa95f0592bfc',
+    'calendar_id' => env('GOOGLE_CALENDAR_ID', ""),
 
 ];
