@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
         Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
-
+        Spatie\BladeJavaScript\BladeJavaScriptServiceProvider::class,
         //
 
         /*
