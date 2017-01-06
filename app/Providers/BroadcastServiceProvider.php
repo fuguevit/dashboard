@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\User;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;
 
@@ -16,8 +17,8 @@ class BroadcastServiceProvider extends ServiceProvider
     {
         Broadcast::routes();
         
-        Broadcast::channel('dashboard', function ($user) {
-            return true;
+        Broadcast::channel('dashboard', function (User $user, $userId) {
+            return (int) $user->id === (int) $userId;
         });
     }
 }
