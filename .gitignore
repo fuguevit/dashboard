@@ -1,7 +1,14 @@
 /node_modules
+/resources/assets/css
 /public/storage
+/public/build
+/public/css
+/public/js
+/public/doc/sass
+/public/media
 /vendor
 /.idea
 Homestead.json
 Homestead.yaml
 .env
+composer.lock
