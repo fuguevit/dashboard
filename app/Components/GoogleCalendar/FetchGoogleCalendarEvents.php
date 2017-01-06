@@ -15,7 +15,7 @@ class FetchGoogleCalendarEvents extends Command
      *
      * @var string
      */
-    protected $signature = 'dashboard:calendar';
+    protected $signature = 'dashboard:calendar {--debug}';
 
     /**
      * The console command description.
@@ -26,6 +26,11 @@ class FetchGoogleCalendarEvents extends Command
 
     public function handle()
     {
+        if ($this->option('debug')) {
+            $this->info('hello,world!');
+            return;
+        }
+
         $events = collect(Event::get())
             ->map(function(Event $event) {
                 return [
@@ -35,7 +40,7 @@ class FetchGoogleCalendarEvents extends Command
             })
             ->unique('name')
             ->toArray();
-        
+
         event(new EventsFetched($events));
     }
 }
