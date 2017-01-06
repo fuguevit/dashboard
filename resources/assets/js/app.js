@@ -22,8 +22,7 @@ new Vue({
     created() {
         this.echo = new Echo({
             broadcaster: 'pusher',
-            key: 'test'
-            //key: window.dashboard.pusherKey,
+            key: window.dashboard.pusherKey,
         });
     },
 });
