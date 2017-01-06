@@ -37,7 +37,11 @@ class FetchGoogleCalendarEvents extends Command
             ->toArray();
 
         if ($this->option('debug')) {
-            $this->info(implode("+", $events));
+            if (count($events) == 0) {
+                $this->info('no events.');
+            } else {
+                $this->info(var_dump($events));
+            }
             return;
         }
         
