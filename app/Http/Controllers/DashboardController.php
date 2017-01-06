@@ -6,8 +6,8 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $pushKey = config('broadcasting.connections.pusher.key');
+        $pusherKey = config('broadcasting.connections.pusher.key');
         
-        return view('dashboard')->withPushKey($pushKey);
+        return view('dashboard', compact('pusherKey'));
     }
 }
