@@ -6,7 +6,7 @@
           type='text/css'>
     <link href="{{ elixir("css/app.css") }}" rel="stylesheet"/>
     <meta name="google" value="notranslate">
-    <meta name="csrf-token" value="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
     @yield('content')
