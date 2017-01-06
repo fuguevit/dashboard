@@ -26,11 +26,6 @@ class FetchGoogleCalendarEvents extends Command
 
     public function handle()
     {
-        if ($this->option('debug')) {
-            $this->info('hello,world!');
-            return;
-        }
-
         $events = collect(Event::get())
             ->map(function(Event $event) {
                 return [
@@ -41,6 +36,11 @@ class FetchGoogleCalendarEvents extends Command
             ->unique('name')
             ->toArray();
 
+        if ($this->option('debug')) {
+            $this->info(implode("+", $events));
+            return;
+        }
+        
         event(new EventsFetched($events));
     }
 }
