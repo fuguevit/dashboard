@@ -9,7 +9,7 @@ class EventsFetched extends DashboardEvent
     /**
      * @var array
      */
-    public $event;
+    public $events;
     
     public function __construct(array $events)
     {
