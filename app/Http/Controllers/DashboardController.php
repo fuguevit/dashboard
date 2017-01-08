@@ -7,7 +7,7 @@ class DashboardController extends Controller
     public function index()
     {
         $pusherKey = config('broadcasting.connections.pusher.key');
-        
+
         return view('dashboard', compact('pusherKey'));
     }
 }

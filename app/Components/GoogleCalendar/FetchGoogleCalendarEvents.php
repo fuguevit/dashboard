@@ -27,10 +27,10 @@ class FetchGoogleCalendarEvents extends Command
     public function handle()
     {
         $events = collect(Event::get())
-            ->map(function(Event $event) {
+            ->map(function (Event $event) {
                 return [
                     'name'  => $event->name,
-                    'date'  => Carbon::createFromFormat('Y-m-d H:i:s', $event->getSortDate())->format(DateTime::ATOM)
+                    'date'  => Carbon::createFromFormat('Y-m-d H:i:s', $event->getSortDate())->format(DateTime::ATOM),
                 ];
             })
             ->unique('name')
@@ -42,9 +42,10 @@ class FetchGoogleCalendarEvents extends Command
             } else {
                 $this->info(var_dump($events));
             }
+
             return;
         }
-        
+
         event(new EventsFetched($events));
     }
 }
