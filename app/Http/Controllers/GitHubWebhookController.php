@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-class GitHubWebHookController extends Controller
+class GitHubWebhookController extends Controller
 {
-
 }
