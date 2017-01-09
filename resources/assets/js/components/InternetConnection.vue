@@ -21,7 +21,7 @@
 
         mixins: [echo],
 
-        propos: ['grid'],
+        props: ['grid'],
 
         data() {
             return {
@@ -40,7 +40,7 @@
             determineConnectionStatus() {
                 const lastHeartBeatReceivedSecondsAgo = moment().diff(this.lastHeartBeatReceivedAt, 'seconds');
 
-                this.online = lastHeartBeatReceivedSecondAgo < 125;
+                this.online = lastHeartBeatReceivedSecondsAgo < 125;
             },
 
             getEventHandlers() {

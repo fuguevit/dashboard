@@ -41548,7 +41548,7 @@ return Vue$3;
 
     mixins: [__WEBPACK_IMPORTED_MODULE_0__mixins_echo__["a" /* default */]],
 
-    propos: ['grid'],
+    props: ['grid'],
 
     data: function data() {
         return {
@@ -41567,7 +41567,7 @@ return Vue$3;
         determineConnectionStatus: function determineConnectionStatus() {
             var lastHeartBeatReceivedSecondsAgo = __WEBPACK_IMPORTED_MODULE_3_moment___default()().diff(this.lastHeartBeatReceivedAt, 'seconds');
 
-            this.online = lastHeartBeatReceivedSecondAgo < 125;
+            this.online = lastHeartBeatReceivedSecondsAgo < 125;
         },
 
         getEventHandlers: function getEventHandlers() {
