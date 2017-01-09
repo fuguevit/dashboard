@@ -6,5 +6,4 @@ use App\Events\DashboardEvent;
 
 class Heartbeat extends DashboardEvent
 {
-    
 }
