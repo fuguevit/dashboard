@@ -4479,7 +4479,7 @@ function relativeDate(value) {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash__["forIn"])(this.getEventHandlers(), function (handler, eventName) {
             this$1.$root.echo
                 .private('dashboard')
-                .listen(".App.Events.$(eventName)", function (eventName) { return handler(eventName); });
+                .listen((".App.Events." + eventName), function (eventName) { return handler(eventName); });
         });
     },
 };
