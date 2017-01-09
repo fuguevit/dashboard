@@ -7,6 +7,7 @@ import CurrentTime from './components/CurrentTime';
 import GithubFile from './components/GithubFile';
 import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
+import LastFm from './components/LastFm';
 
 new Vue({
 
@@ -17,6 +18,7 @@ new Vue({
         GithubFile,
         GoogleCalendar,
         InternetConnection,
+        LastFm
     },
 
     created() {
