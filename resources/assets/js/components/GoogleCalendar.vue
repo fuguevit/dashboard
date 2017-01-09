@@ -28,7 +28,7 @@
 
         props: ['grid'],
 
-        date() {
+        data() {
             return {
                 events: [],
             };

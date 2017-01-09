@@ -41454,7 +41454,7 @@ return Vue$3;
 
     props: ['grid'],
 
-    date: function date() {
+    data: function data() {
         return {
             events: [],
         };
