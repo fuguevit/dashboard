@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('dashboard:calendar')->everyFiveMinutes();
+        $schedule->command(\App\Components\GoogleCalendar\FetchGoogleCalendarEvents::class)->everyFiveMinutes();
         $schedule->command(\App\Components\InternetConnectionStatus\SendHeartbeat::class)->everyMinute();
     }
 }
