@@ -1,5 +1,7 @@
 /node_modules
 /resources/assets/css
+/public/css
+/public/js
 /public/storage
 /public/build
 /public/doc/sass
