@@ -10,7 +10,7 @@ class ForecastFetched extends DashboardEvent
      * @var array
      */
     public $forecast;
-    
+
     public function __construct(array $forecast)
     {
         $this->forecast = $forecast;
