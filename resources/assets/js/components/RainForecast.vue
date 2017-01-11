@@ -37,6 +37,7 @@
 
         computed: {
             status() {
+            /*
                 if(this.noRainPredicted === true) {
                     return 'dry';
                 }
@@ -44,8 +45,8 @@
                 if(this.nothingButRainPredicted === true) {
                     return 'wet';
                 }
-
-                return 'rainy';
+            */
+                return 'dry';
             },
 
             noRainPredicted() {
