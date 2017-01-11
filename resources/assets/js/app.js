@@ -8,6 +8,7 @@ import GithubFile from './components/GithubFile';
 import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
 import LastFm from './components/LastFm';
+import RainForecast from './components/RainForecast';
 
 new Vue({
 
@@ -18,7 +19,8 @@ new Vue({
         GithubFile,
         GoogleCalendar,
         InternetConnection,
-        LastFm
+        LastFm,
+        RainForecast
     },
 
     created() {
