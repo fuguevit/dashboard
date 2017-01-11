@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         \App\Components\GoogleCalendar\FetchGoogleCalendarEvents::class,
         \App\Components\InternetConnectionStatus\SendHeartbeat::class,
+        \App\Components\LastFm\FetchCurrentTrack::class,
     ];
 
     /**
@@ -28,5 +29,6 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command(\App\Components\GoogleCalendar\FetchGoogleCalendarEvents::class)->everyFiveMinutes();
         $schedule->command(\App\Components\InternetConnectionStatus\SendHeartbeat::class)->everyMinute();
+        $schedule->command(\App\Components\LastFm\FetchCurrentTrack::class)->everyMinute();
     }
 }
