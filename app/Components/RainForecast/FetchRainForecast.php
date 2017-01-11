@@ -57,6 +57,7 @@ class FetchRainForecast extends Command
                 if ($carbon->isPast()) {
                     $minutes *= -1;
                 }
+
                 return compact('chanceOfRain', 'minutes');
             })
             ->filter(function (array $foreCastItem) {
@@ -70,12 +71,11 @@ class FetchRainForecast extends Command
     public function getCarbonFromTime(string $time) : Carbon
     {
         $dateTime = Carbon::createFromFormat('H:i', $time);
-        
+
         if (starts_with($time, '00') && Carbon::now()->hour == 23) {
             $dateTime->addDay();
         }
-        
+
         return $dateTime;
     }
 }
-

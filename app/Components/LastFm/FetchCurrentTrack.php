@@ -25,28 +25,29 @@ class FetchCurrentTrack extends Command
 
     /**
      * Event the console command.
-     * 
-     * @return mixed
+     *
      * @throws \Spatie\NowPlaying\Exceptions\BadResponse
+     *
+     * @return mixed
      */
     public function handle()
     {
         $lastFm = new NowPlaying(config('last-fm.api_key'));
         $userName = config('last-fm.user');
         $currentTrack = $lastFm->getTrackInfo($userName);
-        
+
         if ($this->option('debug')) {
             $this->info(var_dump($currentTrack));
+
             return;
         }
-        
+
         if ($currentTrack) {
             event(new TrackIsPlaying($currentTrack, $userName));
+
             return;
         }
-        
+
         event(new NothingPlaying());
     }
-
-
 }
