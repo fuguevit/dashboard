@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
         \App\Components\InternetConnectionStatus\SendHeartbeat::class,
         \App\Components\LastFm\FetchCurrentTrack::class,
         //\App\Components\RainForecast\FetchRainForecast::class,
+        \App\Components\Packagist\FetchTotals::class,
     ];
 
     /**
@@ -32,5 +33,6 @@ class Kernel extends ConsoleKernel
         $schedule->command(\App\Components\InternetConnectionStatus\SendHeartbeat::class)->everyMinute();
         $schedule->command(\App\Components\LastFm\FetchCurrentTrack::class)->everyMinute();
         //$schedule->command(\App\Components\RainForecast\FetchRainForecast::class)->everyMinute();
+        $schedule->command(\App\Components\Packagist\FetchTotals::class)->everyThirtyMinutes();
     }
 }

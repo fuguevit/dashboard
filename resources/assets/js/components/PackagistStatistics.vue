@@ -6,19 +6,19 @@
                 <li class="packagist-statistic">
                     <span class="packagist-statistics__stars">
                     </span>
-                    <span class="packagist-statistics__count">{{ formatNumber(stars) }}</span>
+                    <span class="packagist-statistics__count">{{ stars }}</span>
                 </li>
                 <li class="packagist-statistic">
                     <h2 class="packagist-statistics__period">Today</h2>
-                    <span class="packagist-statistics__count">{{ formatNumber(daily) }}</span>
+                    <span class="packagist-statistics__count">{{ daily }}</span>
                 </li>
                 <li class="packagist-statistic">
                     <h2 class="packagist-statistics__period">This month</h2>
-                    <span class="packagist-statistics__count">{{ formatNumber(monthly) }}</span>
+                    <span class="packagist-statistics__count">{{ monthly }}</span>
                 </li>
                 <li class="packagist-statistic -total">
                     <h2 class="packagist-statistics__period">Total Downloads</h2>
-                    <span class="packagist-statistics__count">{{ formatNumber(total) }}</span>
+                    <span class="packagist-statistics__count">{{ total }}</span>
                 </li>
             </ul>
         </section>
@@ -42,7 +42,7 @@
 
         data() {
             return {
-                starts: 0,
+                stars: 0,
                 daily: 0,
                 monthly: 0,
                 total: 0,
