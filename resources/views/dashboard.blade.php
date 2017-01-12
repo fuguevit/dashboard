@@ -7,6 +7,7 @@
         <last-fm grid="b1:c1"></last-fm>
         <current-time grid="d1" dateformat="ddd DD/MM"></current-time>
         <internet-connection grid="d2"></internet-connection>
+        <packagist-statistics grid="b2"></packagist-statistics>
         <rain-forecast grid="c2"></rain-forecast>
     </div>
 

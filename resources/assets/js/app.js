@@ -9,6 +9,7 @@ import GoogleCalendar from './components/GoogleCalendar';
 import InternetConnection from './components/InternetConnection';
 import LastFm from './components/LastFm';
 import RainForecast from './components/RainForecast';
+import PackagistStatistics from './components/PackagistStatistics';
 
 new Vue({
 
@@ -20,7 +21,8 @@ new Vue({
         GoogleCalendar,
         InternetConnection,
         LastFm,
-        RainForecast
+        RainForecast,
+        PackagistStatistics
     },
 
     created() {
