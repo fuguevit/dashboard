@@ -8,8 +8,18 @@ use Illuminate\Console\Command;
 
 class FetchGitHubFileContent extends Command
 {
+    /**
+     * The console command name.
+     * 
+     * @var string
+     */
     protected $signature = 'dashboard:github';
     
+    /**
+     * The console command description.
+     * 
+     * @var string
+     */
     protected $description = 'Fetch GitHub file content.';
     
     public function handle()

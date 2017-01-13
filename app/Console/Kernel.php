@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         \App\Components\LastFm\FetchCurrentTrack::class,
         //\App\Components\RainForecast\FetchRainForecast::class,
         \App\Components\Packagist\FetchTotals::class,
+        \App\Components\GitHub\FetchGitHubFileContent::class,
     ];
 
     /**
@@ -34,5 +35,6 @@ class Kernel extends ConsoleKernel
         $schedule->command(\App\Components\LastFm\FetchCurrentTrack::class)->everyMinute();
         //$schedule->command(\App\Components\RainForecast\FetchRainForecast::class)->everyMinute();
         $schedule->command(\App\Components\Packagist\FetchTotals::class)->everyThirtyMinutes();
+        $schedule->command(\App\Components\GitHub\FetchGitHubFileContent::class)->everyFiveMinutes();
     }
 }
