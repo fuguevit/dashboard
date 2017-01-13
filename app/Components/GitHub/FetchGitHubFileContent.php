@@ -10,22 +10,22 @@ class FetchGitHubFileContent extends Command
 {
     /**
      * The console command name.
-     * 
+     *
      * @var string
      */
     protected $signature = 'dashboard:github';
-    
+
     /**
      * The console command description.
-     * 
+     *
      * @var string
      */
     protected $description = 'Fetch GitHub file content.';
-    
+
     public function handle()
     {
         $fileNames = explode(',', env('GITHUB_FILES'));
-        
+
         $fileContent = collect($fileNames)
             ->combine($fileNames)
             ->map(function ($fileName) {
@@ -38,7 +38,7 @@ class FetchGitHubFileContent extends Command
                 return markdownToHtml($markdownContent);
             })
             ->toArray();
-        
+
         event(new FileContentFetched($fileContent));
     }
 }

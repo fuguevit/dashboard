@@ -229,7 +229,7 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
-        'GitHub'       => GrahamCampbell\GitHub\Facades\GitHub::class,
+        'GitHub'         => GrahamCampbell\GitHub\Facades\GitHub::class,
         'GoogleCalendar' => Spatie\GoogleCalendar\GoogleCalendarFacade::class,
 
     ],
