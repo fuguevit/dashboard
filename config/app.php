@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Barryvdh\Debugbar\ServiceProvider::class,
+        GrahamCampbell\GitHub\GitHubServiceProvider::class,
         Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
         Spatie\BladeJavaScript\BladeJavaScriptServiceProvider::class,
         //
@@ -228,6 +229,7 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
+        'GitHub'       => GrahamCampbell\GitHub\Facades\GitHub::class,
         'GoogleCalendar' => Spatie\GoogleCalendar\GoogleCalendarFacade::class,
 
     ],
