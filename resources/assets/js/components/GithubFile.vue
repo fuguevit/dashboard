@@ -28,7 +28,7 @@
         },
 
         methods: {
-            getEventHandler() {
+            getEventHandlers() {
                 return {
                     'GitHub.FileContentFetched': response => {
                         this.contents = response.fileContent[this.fileName];
