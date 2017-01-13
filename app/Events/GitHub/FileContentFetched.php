@@ -10,7 +10,7 @@ class FileContentFetched extends DashboardEvent
      * @var array
      */
     public $fileContent;
-    
+
     public function __construct(array $fileContent)
     {
         $this->fileContent = $fileContent;
